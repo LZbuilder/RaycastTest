@@ -21,7 +21,7 @@ public class Motor : MonoBehaviour
     void Update()
     {
 
-        transform.rotation = Quaternion.Euler(0, slider.value, 0);
+        transform.rotation = Quaternion.Euler(slider.value, 0, 0);
     }
 
     public void SetSliderValue()

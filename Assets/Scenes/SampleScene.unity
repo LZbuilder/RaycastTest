@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 421382724}
   m_Layer: 0
   m_Name: Mirror
-  m_TagString: Untagged
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 344878907}
-  Angle: 0
+  inputField: {fileID: 1730400949}
 --- !u!1 &646116212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reflections: 4
-  maxLength: 10
+  maxLength: 255
 --- !u!120 &1191502479
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1941,7 +1941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2107795058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 421382724}
+        m_TargetAssemblyTypeName: Motor, Assembly-CSharp
+        m_MethodName: SetSliderValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2107795058
 MonoBehaviour:
   m_ObjectHideFlags: 0
